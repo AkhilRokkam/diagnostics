@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=/home/akhil/Documents/diagnostics/springboot-skeleton-akhil/.git\:/home/akhil/Documents/diagnostics/springboot-skeleton/.git\:
+GitRepositoriesView.GitDirectories.relative=springboot-skeleton-akhil/.git\:springboot-skeleton/.git\:
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

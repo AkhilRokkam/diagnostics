@@ -1,0 +1,220 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+<!-- Mobile Specific Meta -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Favicon-->
+<link rel="shortcut icon" href="img/fav.png">
+<!-- Author Meta -->
+<meta name="author" content="colorlib">
+<!-- Meta Description -->
+<meta name="description" content="">
+<!-- Meta Keyword -->
+<meta name="keywords" content="">
+<!-- meta character set -->
+<meta charset="UTF-8">
+<!-- Site Title -->
+<title>Medical</title>
+
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+	rel="stylesheet">
+<!-- CSS============================================= -->
+<link rel="stylesheet" href="akhil/css/linearicons.css">
+<link rel="stylesheet" href="akhil/css/font-awesome.min.css">
+<link rel="stylesheet" href="akhil/css/bootstrap.css">
+<link rel="stylesheet" href="akhil/akhil/css/magnific-popup.css">
+<link rel="stylesheet" href="akhil/css/jquery-ui.css">
+<link rel="stylesheet" href="akhil/css/nice-select.css">
+<link rel="stylesheet" href="akhil/css/animate.min.css">
+<link rel="stylesheet" href="akhil/css/owl.carousel.css">
+<link rel="stylesheet" href="akhil/css/jquery-ui.css">
+<link rel="stylesheet" href="akhil/css/main.css">
+</head>
+<body>
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li><a href="customer.jsp">Home</a></li>
+
+
+						<li class="menu-has-children"><a href="customer.jsp">Booking</a>
+							<ul>
+								<li class="menu-has-children"><a href="${contextPath}/${pageContext.request.userPrincipal.name}/NewBooking">New Booking</a></li>
+								<li class="menu-has-children"><a href="${contextPath}/${pageContext.request.userPrincipal.name}/Mybooking">My Booking</a></li>
+
+								<li ><form method="Get" action="${contextPath}/NewBooking">
+									<input type="hidden" name="username" value="${username}">
+									<input type="submit" value="New Booking">
+								</form></li>
+								
+								<li><form method="Get" action="${contextPath}/Mybooking">
+									<input type="hidden" name="username" value="${username}">
+									<input type="submit" value="My Bookings">
+								</form></li>
+
+							</ul></li>
+						<li ><c:if
+								test="${pageContext.request.userPrincipal.name != null}">
+								<form id="logoutForm" method="POST"
+									action="${contextPath}/logout">
+									<input type="hidden" name="${_csrf.parameterName}"
+										value="${_csrf.token}" />
+								</form>
+								<li ><a><font color="white">${pageContext.request.userPrincipal.name}</font></a></li>
+								<li ><a onclick="document.forms['logoutForm'].submit()"><font
+										color="white">Logout</font></a></li>
+							</c:if></li>
+					</ul>
+				</nav>
+				
+				<!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- #header -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div
+				class="row fullscreen d-flex align-items-center justify-content-center">
+				<div class="banner-content col-lg-8 col-md-12">
+					<h1>We Care for Your Health Every Moment</h1>
+					<p class="pt-10 pb-10 text-white">Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
+					<%-- <a href="${contextPath}/NewBooking" class="primary-btn text-uppercase">Book Now</a> --%>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="facilities-area section-gap">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-7">
+					<div class="title text-center">
+						<h1 class="mb-10">Our Latest Facilities</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="single-facilities">
+						<span class="lnr lnr-rocket"></span> <a href="#"><h4>24/7
+								Emergency</h4></a>
+						<p>inappropriate behavior is often laughed off as “boys will
+							be boys,” women face higher conduct women face higher conduct.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-facilities">
+						<span class="lnr lnr-heart"></span> <a href="#"><h4>24/7
+								Emergency</h4></a>
+						<p>inappropriate behavior is often laughed off as “boys will
+							be boys,” women face higher conduct women face higher conduct.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-facilities">
+						<span class="lnr lnr-bug"></span> <a href="#"><h4>Intensive
+								Care</h4></a>
+						<p>inappropriate behavior is often laughed off as “boys will
+							be boys,” women face higher conduct women face higher conduct.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single-facilities">
+						<span class="lnr lnr-users"></span> <a href="#"><h4>Family
+								Planning</h4></a>
+						<p>inappropriate behavior is often laughed off as “boys will
+							be boys,” women face higher conduct women face higher conduct.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2  col-md-6">
+					<div class="single-footer-widget">
+						<h6>Top Products</h6>
+						<ul class="footer-nav">
+							<li><a href="#">Managed Website</a></li>
+							<li><a href="#">Manage Reputation</a></li>
+							<li><a href="#">Power Tools</a></li>
+							<li><a href="#">Marketing Service</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6  col-md-12">
+					<div class="single-footer-widget newsletter">
+						<h6>Newsletter</h6>
+						<p>You can trust us. we only send promo offers, not a single
+							spam.</p>
+						<div id="mc_embed_signup">
+							<form target="_blank"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="form-inline">
+
+								<div class="form-group row" style="width: 100%">
+									<div class="col-lg-8 col-md-12">
+										<input name="EMAIL" placeholder="Your Email Address"
+											onfocus="this.placeholder = ''"
+											onblur="this.placeholder = 'Your Email Address '" required=""
+											type="email">
+									</div>
+
+									<div class="col-lg-4 col-md-12">
+										<button class="nw-btn primary-btn circle">
+											Subscribe<span class="lnr lnr-arrow-right"></span>
+										</button>
+									</div>
+								</div>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+
+	<script src="akhil/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="akhil/js/popper.min.js"></script>
+	<script src="akhil/js/vendor/bootstrap.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="akhil/js/jquery-ui.js"></script>
+	<script src="akhil/js/easing.min.js"></script>
+	<script src="akhil/js/hoverIntent.js"></script>
+	<script src="akhil/js/superfish.min.js"></script>
+	<script src="akhil/js/jquery.ajaxchimp.min.js"></script>
+	<script src="akhil/js/jquery.magnific-popup.min.js"></script>
+	<script src="akhil/js/jquery.tabs.min.js"></script>
+	<script src="akhil/js/jquery.nice-select.min.js"></script>
+	<script src="akhil/js/owl.carousel.min.js"></script>
+	<script src="akhil/js/mail-script.js"></script>
+	<script src="akhil/js/main.js"></script>
+</body>
+</html>

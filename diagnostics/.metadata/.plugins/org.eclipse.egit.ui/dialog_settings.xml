@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://gitlab.com/talentsprint-prime/springboot-skeleton.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
+		<item value="gitlab.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="akhil &lt;akhil@akhil-rokkam&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="akhil &lt;akhil@akhil-rokkam&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="600"/>
+		<item key="DIALOG_Y_ORIGIN" value="250"/>
+		<item key="DIALOG_WIDTH" value="715"/>
+		<item key="DIALOG_HEIGHT" value="430"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+</section>

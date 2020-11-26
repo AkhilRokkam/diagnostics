@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+/home/akhil/Documents/diagnostics/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1671659473.index
+/springboot-skeleton/src
+/home/akhil/Documents/diagnostics/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3084942369.index
+/springboot-skeleton/src
+/home/akhil/Documents/diagnostics/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2226766667.index
+/springboot-skeleton/src
+/home/akhil/Documents/diagnostics/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1441173839.index
+/springboot-skeleton/src
+/home/akhil/Documents/diagnostics/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3776123496.index
+/springboot-skeleton-akhil/src
+/home/akhil/Documents/diagnostics/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1129740851.index
+/springboot-skeleton-akhil/src
